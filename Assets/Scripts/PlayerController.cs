@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.Tilemaps;
 
-public class GameController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     /*[SerializeField] private string nextLevel;
     [SerializeField] private Player player;

@@ -4,12 +4,12 @@ using UnityEngine;
 public class Entity : MonoBehaviour
 {
     public bool IsFrozen { get; private set; }
-    protected GameController gameController;
+    protected PlayerController playerController;
     protected SpriteRenderer spriteRenderer;
 
     protected virtual void Awake()
     {
-        gameController = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+        playerController = GameObject.FindWithTag("PlayerController").GetComponent<PlayerController>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
