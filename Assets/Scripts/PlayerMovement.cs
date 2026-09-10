@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 moveInput;
+    public bool canInteract = false;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,5 +25,13 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext context) 
     {
         moveInput = context.ReadValue<Vector2>();
+    }
+
+    public void Interact(InputAction.CallbackContext context) 
+    {
+        if (context.performed && canInteract)
+        {
+            Debug.Log("E was pressed!");
+        }
     }
 }
