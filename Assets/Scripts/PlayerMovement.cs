@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public bool canInteract = false;
     public GameObject item;
     public GameObject screen;
+    public GameObject levelTransition;
 
     //-----Animation
     private Animator animator;
@@ -28,6 +29,15 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         rb.linearVelocity = moveInput * moveSpeed;
+
+        if (!item.activeSelf) //if item is picked up
+        {
+            levelTransition.SetActive(true);
+        }
+        else
+        {
+            levelTransition.SetActive(false);
+        }
 
         if (moveInput != Vector2.zero)
         {
