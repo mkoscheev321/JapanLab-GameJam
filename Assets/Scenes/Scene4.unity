@@ -5387,7 +5387,7 @@ MonoBehaviour:
 --- !u!1 &634081560 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4155720074573226054, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-  m_PrefabInstance: {fileID: 1049097888}
+  m_PrefabInstance: {fileID: 838630943}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &696037467
 GameObject:
@@ -5418,7 +5418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ddeb357b1284e74920c0ce4017ef01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  nextLevel: Scene3
+  nextLevel: Scene5
   coverImage: {fileID: 1981590790}
 --- !u!4 &696037469
 Transform:
@@ -5564,7 +5564,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1049097888
+--- !u!1001 &838630943
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -5575,41 +5575,6 @@ PrefabInstance:
     - target: {fileID: 774485962530075801, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
       propertyPath: m_Name
       value: ---UI---
-      objectReference: {fileID: 0}
-    - target: {fileID: 1455698943255072717, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 127.1686
-      objectReference: {fileID: 0}
-    - target: {fileID: 1455698943255072717, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -263.70883
-      objectReference: {fileID: 0}
-    - target: {fileID: 2834375820979226058, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-      propertyPath: m_text
-      value: I remember, a client gave these to me. I never got to try them.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2834375820979226058, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-      propertyPath: m_fontSize
-      value: 37.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3687276723065803195, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-      propertyPath: m_text
-      value: "During the late Meiji restoration, there was a trend for women to become
-        \u201Cmodern girls\u201D or moga. This included an increase in consumerism,
-        especially of western products. Sweets were a way for women to experience
-        femininity within the constraints of society at the time. \n\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3687276723065803195, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-      propertyPath: m_fontSize
-      value: 34.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999557029686385750, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 452.5863
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999557029686385750, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 98.57546
       objectReference: {fileID: 0}
     - target: {fileID: 4155720074573226054, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
       propertyPath: m_IsActive
@@ -5695,14 +5660,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6720108362615075093, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 676761384708888218, guid: 272482e194a3049f6a8cc26cffb70cf2, type: 3}
-    - target: {fileID: 6720108362615075093, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5776,7 +5733,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 676761384708888218, guid: 272482e194a3049f6a8cc26cffb70cf2, type: 3}
+  m_Sprite: {fileID: -2222260232794761709, guid: 4fc7ce10e2dd14676bb52b5b711be8f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5795,8 +5752,8 @@ Transform:
   m_GameObject: {fileID: 1121614974}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6, y: 0.84, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 8.55, y: 3.59, z: 0}
+  m_LocalScale: {x: 0.7477, y: 0.7477, z: 0.7477}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1941173798}
@@ -8636,7 +8593,7 @@ SpriteRenderer:
 --- !u!114 &1981590790 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 23837339086558345, guid: 81c472a8eb5d14cfbbcfd49887cc85ac, type: 3}
-  m_PrefabInstance: {fileID: 1049097888}
+  m_PrefabInstance: {fileID: 838630943}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -8773,7 +8730,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 186275966}
-  - {fileID: 1049097888}
+  - {fileID: 838630943}
   - {fileID: 1702847345}
   - {fileID: 2013102190}
   - {fileID: 1285956091}
