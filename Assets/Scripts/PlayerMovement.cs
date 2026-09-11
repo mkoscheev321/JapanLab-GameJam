@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     public bool canInteract = false;
+    public GameObject item;
+    public GameObject screen;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed && canInteract)
         {
             Debug.Log("E was pressed!");
+            item.SetActive(false);
+            screen.SetActive(true);
         }
     }
 }
