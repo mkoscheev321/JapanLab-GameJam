@@ -3,14 +3,14 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class LevelTransition : Entity
 {
+    [SerializeField] private GameObject gameController;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Player player = other.GetComponent<Player>();
-        // if (player != null)
-        //{
-            //gameController.GetComponent<GameController>().ToNextLevel();
-        //    Destroy(gameObject);
-        //}
+        if (other.CompareTag("Player"))
+        {
+            gameController.GetComponent<PlayerController>().ToNextLevel();
+            Destroy(gameObject);
+        }
     }
 }

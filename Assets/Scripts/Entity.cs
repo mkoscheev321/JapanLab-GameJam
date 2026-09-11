@@ -9,7 +9,7 @@ public class Entity : MonoBehaviour
 
     protected virtual void Awake()
     {
-        playerController = GameObject.FindWithTag("PlayerController").GetComponent<PlayerController>();
+        playerController = FindFirstObjectByType<PlayerController>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
