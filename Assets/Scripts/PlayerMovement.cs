@@ -30,13 +30,11 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.linearVelocity = moveInput * moveSpeed;
 
-        if (!item.activeSelf) //if item is picked up
+        levelTransition.SetActive(false);
+
+        if (item == null || !item.activeSelf) //if item is picked up
         {
             levelTransition.SetActive(true);
-        }
-        else
-        {
-            levelTransition.SetActive(false);
         }
 
         if (moveInput != Vector2.zero)
